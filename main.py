@@ -1,4 +1,4 @@
-from reports import show_users
+from reports import show_users, show_books
 from importer import UserImporter, BookImporter, BookAuthorImporter, ShelfImporter, BookShelfImporter, AuthorImporter
 from models import database, User, Book, Author, Shelf, BookShelf, BookAuthor, BookTranslator, UserAuthorRelation, \
     UserRelation
@@ -22,8 +22,8 @@ def show_data():
     print("#" * 79)
     show_users()
     print("#" * 79)
-    # show_books()
-    # print("#" * 79)
+    show_books()
+    print("#" * 79)
 
 
 if __name__ == '__main__':
