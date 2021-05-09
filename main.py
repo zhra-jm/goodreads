@@ -71,6 +71,18 @@ def show_book_shelves():
         print(q.user.username, q.shelf.name, q.book_count)
 
 
+def show_all_book_shelves_optimized():
+    query = BookShelf.select().join(User)\
+        .switch(BookShelf).join(Book).\
+        switch(BookShelf).join(Shelf).order_by(BookShelf.rate)
+
+    for q in query:
+        print(q.rate)
+        print(q.user.username)
+        print(q.shelf.name)
+        print(q.book.name)
+        print('#' * 20)
+
 if __name__ == '__main__':
     # create_tables()
     # load_data()
@@ -80,5 +92,6 @@ if __name__ == '__main__':
     # show_user_data()
     # bs = BookShelf.get_by_id(2)
     # bs.change_to_read()
-    show_book_rates()
+    # show_book_rates()
     # show_book_shelves()
+    show_all_book_shelves_optimized()
