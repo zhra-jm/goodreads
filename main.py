@@ -83,6 +83,7 @@ def show_all_book_shelves_optimized():
         print(q.book.name)
         print('#' * 20)
 
+
 if __name__ == '__main__':
     # create_tables()
     # load_data()
