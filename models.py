@@ -7,7 +7,6 @@ database = connect('mysql://zahra:3078@127.0.0.1:3306/goodreads')
 
 
 class BaseModel(Model):
-
     class Meta:
         database = database
 
@@ -56,8 +55,6 @@ class BookShelf(BaseModel):
         read_shelf = self.user.shelves.where(Shelf.name == Shelf.READ).first()
         self.shelf = read_shelf
         self.save()
-
-
 
 
 class BookAuthor(BaseModel):
