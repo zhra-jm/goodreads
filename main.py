@@ -6,7 +6,6 @@ from models import BookShelf
 if __name__ == '__main__':
     if sys.argv[1] == "create_tables":
         source.create_tables()
-    elif sys.argv[1] == "load_data":
         source.load_data()
     elif sys.argv[1] == "show_data":
         if sys.argv[2] == "all":
