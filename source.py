@@ -84,15 +84,3 @@ def show_all_book_shelves_optimized():
         print('#' * 20)
 
 
-if __name__ == '__main__':
-    # create_tables()
-    # load_data()
-    # show_data()
-    # show_user_data('hosein', '654321')
-    # show_user_data('zhra')
-    # show_user_data()
-    # bs = BookShelf.get_by_id(2)
-    # bs.change_to_read()
-    # show_book_rates()
-    # show_book_shelves()
-    show_all_book_shelves_optimized()

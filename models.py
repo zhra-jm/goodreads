@@ -2,8 +2,9 @@ from peewee import Model, CharField, ForeignKeyField, SmallIntegerField, TextFie
     DateTimeField
 from datetime import datetime
 from playhouse.db_url import connect
+from utils import DATABASE_INFO
 
-database = connect('mysql://zahra:3078@127.0.0.1:3306/goodreads')
+database = connect(DATABASE_INFO)
 
 
 class BaseModel(Model):
