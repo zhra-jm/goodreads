@@ -2,9 +2,9 @@
 simulation of the site goodreads which is a platform that people add books to shelves, write comments about book and change book status. 
 
 ## Build With
-*mysql
+* mysql
 
-*python
+* python
 
 ## How To Use
 
