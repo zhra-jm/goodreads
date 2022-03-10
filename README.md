@@ -24,6 +24,12 @@ simulation of the site goodreads which is a platform that people add books to sh
 
 ```pip install the requirements```
 
+* first of all you have to create a file name ```utils.py``` and have to write down your database config in it:
+
+* here is an example of how you should write a config:
+
+```DATABASE_INFO = 'mysql://username:password@127.0.0.1:3306/goodreads'```
+
 * to create database and load data from fixtures folder run:
 
 ```python3 main.py "create_tables"```
@@ -46,7 +52,7 @@ you can replace hossein with any username you want and also 654321 with any pass
 
 you can replace "2" with any bookshelf id you want
 
-*if you wanna change the status of a book to read run:
+* if you wanna change the status of a book to read run:
 
 ```python3 main.py "change_reading_status" "2"```
 
