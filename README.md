@@ -46,7 +46,7 @@ simulation of the site goodreads which is a platform that people add books to sh
 
 you can replace hossein with any username you want and also 654321 with any password.also one of them is enough to find user data
 
-*if you want to get an specific bookshelf by id run:
+* if you want to get an specific bookshelf by id run:
 
 ```python3 main.py "get_bookshelf" "2"```
 
